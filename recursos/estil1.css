@@ -1,0 +1,57 @@
+graph {
+	fill-color: rgb(173, 174, 227);
+}
+
+node {
+	text-offset: -5px, 0px;
+	text-size: 28px;
+	stroke-mode: plain;
+	stroke-color: black;
+	stroke-width: 2px;
+	text-background-mode: plain;
+	text-alignment: at-left;
+	text-background-color: rgb(173, 174, 227);
+}
+
+edge {
+	text-alignment: under;
+	text-size: 20px;
+	text-background-mode: plain;
+	text-background-color: rgb(173, 174, 227);
+}
+
+node.tancada {
+	size: 15px;
+	fill-image: url('.\recursos\aixetatancada.png');
+	fill-mode: image-scaled;
+
+}
+
+node.gorigen {
+	size: 25px;
+	fill-color: white;
+}
+
+node.gterminal {
+	fill-color: white;
+}
+
+node.gconnexio {
+	fill-color: black;
+}
+
+sprite {
+	fill-mode: none; 
+	text-size: 15px;
+	text-alignment: at-left;
+	text-background-mode: plain;
+	text-background-color: rgb(173, 174, 227);
+}
+
+sprite.demandes {
+	text-offset: -5px, 50px;
+}
+
+sprite.coord {
+	text-offset: -5px, 25px;
+}

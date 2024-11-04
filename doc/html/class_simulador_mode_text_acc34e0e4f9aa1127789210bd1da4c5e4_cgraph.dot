@@ -1,0 +1,48 @@
+digraph "SimuladorModeText.arbre"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="SimuladorModeText.arbre",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Verifica si una xarxa és un arbre."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="GestorXarxes.esArbre",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_gestor_xarxes.html#aef6c5c914fde2624b680c0cc1775a403",tooltip="Indica si la component connexa a la qual pertany nodeOrigen és un arbre."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Xarxa.componentConexa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xarxa.html#a2ef5703280a313491ba92e1ded234c79",tooltip="Component connexa de la xarxa."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Xarxa.afegirNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xarxa.html#aa6eac93090292f4b346dfad8ad7c6c03",tooltip="Afegeix node al sub-graph."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Xarxa.node",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xarxa.html#ad54474fd5d22a71c1ad13e6c5d16fb10",tooltip="Retorna el node amb identificador id."];
+  Node3 -> Node6 [id="edge5_Node000003_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Xarxa.posarCanonades",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xarxa.html#acaa2dba859397b002c1445f32605f24f",tooltip="Metode recursiu que va recorrent el graph i crear un sub-graph."];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="Xarxa.afegirAresta",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xarxa.html#ad299ff8fd5bbfe64182b224008f0858e",tooltip="Afegeix canonada al sub-graph."];
+  Node6 -> Node4 [id="edge7_Node000006_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node6 -> Node8 [id="edge8_Node000006_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="Xarxa.entrades",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xarxa.html#a7373a831729d8cf2bfb8ccd67838efd1",tooltip="Entrades d'un node."];
+  Node8 -> Node5 [id="edge9_Node000008_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node6 -> Node6 [id="edge10_Node000006_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 -> Node9 [id="edge11_Node000006_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="Xarxa.sortides",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xarxa.html#a4cd02c94912b30cafe3f8fef8a584eae",tooltip="Sortides d'un node."];
+  Node9 -> Node5 [id="edge12_Node000009_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node9 [id="edge13_Node000003_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node5 [id="edge14_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node10 [id="edge15_Node000002_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="GestorXarxes.teCicles",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_gestor_xarxes.html#a51fa1439ecaabee3627f77eed9122ad3",tooltip="Diu si la component connexa de la xarxa x que conté nodeOrigen té cicles."];
+  Node10 -> Node11 [id="edge16_Node000010_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="GestorXarxes.iteCicles",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_gestor_xarxes.html#a9e3cd4d5b90e29b504ce195f9d43042c",tooltip="Part recursiva de la funció teCicles,."];
+  Node11 -> Node11 [id="edge17_Node000011_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node10 -> Node12 [id="edge18_Node000010_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="GestorXarxes.omplirEntrades",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_gestor_xarxes.html#a3fb93b470ce6658a15095c7d905dec60",tooltip="Emparella cada node amb una llista de quins nodes entren en aquest."];
+  Node12 -> Node3 [id="edge19_Node000012_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node12 -> Node8 [id="edge20_Node000012_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node12 -> Node5 [id="edge21_Node000012_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node13 [id="edge22_Node000001_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="SimuladorModeText.escriure",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_simulador_mode_text.html#ae5f15fc19976496a81e70357f2e622da",tooltip="Escriu un missatge al Writer especificat."];
+  Node1 -> Node14 [id="edge23_Node000001_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="SimuladorModeText.llegir",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_simulador_mode_text.html#a522b599d1c60cdbcc9b4869c2feba8a6",tooltip="Llegeix una línia del BufferedReader."];
+  Node1 -> Node15 [id="edge24_Node000001_Node000015",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="SimuladorModeText.retornar\lOrigen",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_simulador_mode_text.html#a516621320dadf2479422f29f7cfcdc3b",tooltip="Retorna un Origen basat en el seu identificador."];
+  Node15 -> Node5 [id="edge25_Node000015_Node000005",color="steelblue1",style="solid",tooltip=" "];
+}

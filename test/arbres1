@@ -1,0 +1,35 @@
+terminal
+casa meva
+41:57:47.29N,2:49:53.64W
+23977.5
+terminal
+casa teva
+41:58:24.45N,2:48:52.3E
+3456.23
+origen
+x1
+41:53:7.56N,2:33:14.32E
+connectar
+x1
+casa meva
+10
+origen
+x2
+42:25:57.61N,2:54:14.24E
+connectar
+x2
+casa teva
+15
+origen
+x3
+01:10:32S,01:10:32E
+connectar
+x3
+casa teva
+25.5
+arbre
+x1
+arbre
+x2
+arbre
+x3

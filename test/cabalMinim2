@@ -1,0 +1,67 @@
+terminal
+T11
+41:57:47N,2:49:53E
+23977.5
+terminal
+T12
+41:58:24N,2:48:52E
+3456.23
+connexio
+C11
+41:57:47N,2:49:54E
+origen
+O1
+41:53:7N,2:33:14E
+connectar
+C11
+T11
+270.45
+connectar
+C11
+T12
+20000
+connectar
+O1
+C11
+5400.5
+demanda
+T11
+200
+demanda
+T12
+150
+cabal minim
+O1
+100%
+cabal minim
+O1
+50%
+tancar
+T12
+cabal minim
+O1
+100%
+cabal minim
+O1
+50%
+backtrack
+1
+tancar
+C11
+cabal minim
+O1
+100%
+cabal minim
+O1
+50%
+backtrack
+1
+cabal minim
+O1
+0%
+origen
+O2
+41:58:24.45N,2:48:52.3E
+cabal minim
+O2
+33%

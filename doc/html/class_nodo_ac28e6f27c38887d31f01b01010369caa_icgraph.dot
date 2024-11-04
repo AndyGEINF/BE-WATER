@@ -1,0 +1,25 @@
+digraph "Nodo.obrirAixeta"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Nodo.obrirAixeta",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Obrir Aixeta."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Xarxa.obrirAixeta",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xarxa.html#aa8a27b2053f8ca355bddce01fc741a41",tooltip="Obrir aixeta."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="SimuladorModeText.obrir",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_simulador_mode_text.html#a34a040b8c67836b10207f27eb54a2b24",tooltip="Obre l'aixeta."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="SimuladorModeText.gestionar\lOpcions",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_simulador_mode_text.html#ad825174bb70177d36d5160f120ac4671",tooltip="Gestiona les diferents opcions segons la línia llegida del fitxer d'entrada."];
+  Node4 -> Node4 [id="edge4_Node000004_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 -> Node5 [id="edge5_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="SimuladorModeText.simular",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_simulador_mode_text.html#a62dce49bcb5f4c19336a480e36fc1247",tooltip="Simula operacions sobre una xarxa de distribució d'aigua a partir d'un fitxer d'entrada."];
+  Node5 -> Node6 [id="edge6_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="BeWater.main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_be_water.html#aa8aad185395e8f524e8b46d8317e5590",tooltip="Envia els paràmetres necessàris per començar la simulació"];
+  Node1 -> Node7 [id="edge7_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="Xarxa.recular",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xarxa.html#a1162fd976e1518879fb145d8bb9fb338",tooltip="Recular operacions realitzades en les aixetes."];
+  Node7 -> Node8 [id="edge8_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="SimuladorModeText.recular",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_simulador_mode_text.html#a01cd84efada1d0497bd808cf4f2aaafb",tooltip="Recula els canvis d'estat de les aixetes."];
+  Node8 -> Node4 [id="edge9_Node000008_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

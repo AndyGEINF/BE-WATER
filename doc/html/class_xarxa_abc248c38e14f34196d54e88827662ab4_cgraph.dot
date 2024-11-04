@@ -1,0 +1,22 @@
+digraph "Xarxa.demanda"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Xarxa.demanda",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Demanda teòrica d'un node."];
+  Node1 -> Node1 [id="edge1_Node000001_Node000001",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node2 [id="edge2_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Xarxa.demandaPropagada",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xarxa.html#a5af0e05a259eecbbea1216c5b4b74fd4",tooltip="Demanda propagada d'una canonada."];
+  Node2 -> Node3 [id="edge3_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Xarxa.capacitatsCanonades",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xarxa.html#a0d7668080c2f6a8e616ae97c4f0b72a9",tooltip="Suma de les capacitats d'un conjunt de canonades."];
+  Node2 -> Node1 [id="edge4_Node000002_Node000001",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node4 [id="edge5_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Xarxa.entrades",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xarxa.html#a7373a831729d8cf2bfb8ccd67838efd1",tooltip="Entrades d'un node."];
+  Node4 -> Node5 [id="edge6_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Xarxa.node",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xarxa.html#ad54474fd5d22a71c1ad13e6c5d16fb10",tooltip="Retorna el node amb identificador id."];
+  Node1 -> Node6 [id="edge7_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Xarxa.sortides",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_xarxa.html#a4cd02c94912b30cafe3f8fef8a584eae",tooltip="Sortides d'un node."];
+  Node6 -> Node5 [id="edge8_Node000006_Node000005",color="steelblue1",style="solid",tooltip=" "];
+}
